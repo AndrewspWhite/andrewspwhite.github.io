@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Science</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,800" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+
+
+    <!-- NAV BEGINS -->
+    <nav class="clearHeader sci">
+        <div class="logo">
+            <a href="index.html">
+            <img src="assets/project3logo.jpg" alt=""></a>
+        </div>
+        <ul>
+            <li>
+                <a class="link" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="link" href="philosophy.html">Philosophy</a>
+            </li>
+            <li>
+                <a class="link" href="science.html">Science</a>
+            </li>
+            <li>
+                <a class="link" href="mathematics.html">Mathematics</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- NAV ENDS -->
+
+
+    <!-- HEADER BEGINS -->
+    <header class="science">
+        <h2 class="animated zoomOutDown">Science</h2>
+    </header>
+    <!-- HEADER ENDS -->
+
+
+    <!-- MAIN BEGINS -->
+    <main>
+
+
+        <!-- WRAPPER BEGINs -->
+        <div class="wrapper">
+
+
+            <!-- SECTIONS BEGINS -->
+            <section class="science">
+                <h3>SCIENCE</h3>
+                <p>Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, ia <a class="internal" href="philosophy.html"><em>philosophy</em></a> nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, ia.
+                </p>
+                <div class="imageContainer">
+                    <div class="mainImage">
+                        <img src="assets/mad-scientist.jpeg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION ENDS -->
+
+
+            <!-- SECTION BEGINS -->
+            <section class="POTENTIAL">
+                <h3>POTENTIAL OR ACTUALITY?</h3>
+                <div class="waveParticle">
+                    <div class="catSide">
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione <a class="internal" href="https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat"><em>Schrodinger's Cat</em></a>, Nam quis nulla. Integer malesuada. In in enim a arcu impe.
+                        </p>
+                    </div>
+                    <div class="catPic"><img src="assets/quantumCat.png" alt=""></div>
+                </div>
+                <p class="catSide">Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna..</p>
+            </section>
+            <!-- SECTION ENDS -->
+
+
+            <!-- SECTION BEGINS -->
+            <section class="portfolio" id="portfolio">
+                <div class="wrapper Gallery">
+                    <h6>Science Gives Us Pretty Pictures</h6>
+                    <div class="gallery fade">
+                        <div class="galleryItem">
+                            <img src="assets/hubble.jpg" alt="">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="assets/blackhole.jpg" alt=""></div>
+                        <div class="galleryItem">
+                            <img src="assets/Orion-Hero.jpg" alt=""></div>
+                        <div class="galleryItem">
+                            <img src="assets/space.jpg" alt="">
+                        </div>
+                        <div class="galleryItem">
+                            <img src="assets/blackholescu.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- SECTIONS ENDS -->
+
+
+        <!-- WRAPPER ENDS -->
+        </div>
+
+
+    </main>
+    <!-- MAIN ENDS -->
+
+
+    <!-- FOOTER BEGINS -->
+    <footer>
+        <p class="copyright">© Dialectical Monism 2018 | by AW Templates</p>
+        <div class="footerIcons">
+            <a href="https://en.wikipedia.org/wiki/Dialectical_monism"><i class="fab fa-wikipedia-w"></i></a>
+            <a href="https://www.facebook.com/speculativephilosophy/"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+
+    <!-- JQUERY BEGINS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.2/flickity.pkgd.min.js"></script> -->
+    <script>
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+         //>=, not <=
+        if (scroll >= 500) {
+            //clearHeader, not clearheader - caps H
+            $(".clearHeader").addClass("darkHeader");
+        }
+
+             //>=, not <=
+        if (scroll < 500) {
+            //clearHeader, not clearheader - caps H
+            $(".clearHeader").removeClass("darkHeader");
+        }
+
+    }); //missing );
+    </script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.fade').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+      });
+    });
+    </script>
+    <!-- JQUERY ENDS -->
+
+
+</body>
+</html>

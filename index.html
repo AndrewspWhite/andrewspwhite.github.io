@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,800" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+
+
+    <!-- NAV BEGINS -->
+    <nav class="clearHeader">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/project3logo.jpg" alt=""></a>
+        </div>
+        <ul>
+            <li>
+                <a class="link" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="link" href="philosophy.html">Philosophy</a>
+            </li>
+            <li>
+                <a class="link" href="science.html">Science</a>
+            </li>
+            <li>
+                <a class="link" href="mathematics.html">Mathematics</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- NAV ENDS -->
+
+
+    <!-- HEADER BEGINS -->
+    <header>
+        <h1>Dialectical Monism</h1>
+    </header>
+    <!-- HEADER ENDS -->
+
+
+    <!-- MAIN BEGINS -->
+    <main class="home">
+
+
+        <!-- WRAPPER BEGINS -->
+        <div class="wrapper">
+
+
+            <!-- SECTION BEGINS -->
+            <section>
+                <h3 class="purpose">Purpose</h3>
+                <p>Here at <a class="internal" href="home.html">dialecticalmonism.com</a>, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.  In the spirit of <a class="internal" href="https://en.wikipedia.org/wiki/Occam%27s_razor">Occam’s Razor</a>, content will be limited primarily to the core dualities each thinker or field has developed while also providing additional resources should the reader wish to delve deeper.</p>
+                <div class="imageContainer">
+                    <div class="mainImage">
+                        <img src="assets/project3logo.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- SECTION ENDS -->
+
+
+            <!-- SECTION BEGINS -->
+            <section>
+                <h3>SUBSTANCE DUALISM OR DIALECTICAL MONISM?</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet ne.</p>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione volupta.</p>
+                <p>Nam quis nulla. Integer malesuada. In in enim a arcu imperdiet malesuada. Sed vel lectus. Donec odio urna, tempus molestie, porttitor ut, iaculis quis, sem. Phasellus rhoncus. Aenean id.</p>
+            </section>
+            <!-- SECTION ENDS -->
+
+
+        </div>
+        <!-- WRAPPER ENDS -->
+
+
+    </main>
+    <!-- MAIN ENDS -->
+
+
+    <!-- FOOTER BEGINS -->
+    <footer>
+      <p class="copyright">© Dialectical Monism 2018 | by AW Templates</p>
+      <div class="footerIcons">
+        <a href="https://en.wikipedia.org/wiki/Dialectical_monism"><i class="fab fa-wikipedia-w"></i></a>
+        <a href="https://www.facebook.com/speculativephilosophy/"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+
+
+    <!-- SCRIPT BEGINS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+         //>=, not <=
+        if (scroll >= 500) {
+            //clearHeader, not clearheader - caps H
+            $(".clearHeader").addClass("darkHeader");
+        }
+
+             //>=, not <=
+        if (scroll < 500) {
+            //clearHeader, not clearheader - caps H
+            $(".clearHeader").removeClass("darkHeader");
+        }
+
+    }); //missing );
+    </script>
+    <!-- SCRIPTS END -->
+
+
+</body>
+</html>

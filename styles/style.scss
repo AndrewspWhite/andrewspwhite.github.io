@@ -1,0 +1,604 @@
+
+// SCSS PARTIALS BEGIN
+
+@import 'setup';
+@import 'footer';
+// SCSS PARTIALS END
+
+
+// GENERAL STYLES BEGIN
+html {
+    font-size: 62.5%;
+    // 10px
+}
+
+body{
+    background: black;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.wrapper {
+    max-width: 1080px;
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid transparent;
+}
+
+main.home{
+    margin: 75px 0;
+}
+
+h1, h2{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10rem;
+    text-align: center;
+    opacity: .6;
+    margin: 0;
+}
+
+h3, h4{
+    color: white;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3{
+    border: solid #536DFE 2px;
+    padding: 10px;
+}
+
+h4{
+    margin: 5px 0;
+    padding: 20px 0;
+}
+
+h5{
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: -2px 3px 5px rgba(150, 149, 154, 1);
+}
+
+h6{
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: rgba(255,0,255,.5);
+    text-shadow: 1px 37px 15px rgba(150, 149, 154, 1);
+    text-align: center;
+    margin: 100px;
+}
+
+p{
+    color:#F8F8FF;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+// GENERAL STYLES END
+
+
+// NAV STYLES BEGIN
+.clearHeader, .logo{
+    transition: all 1s;
+}
+
+.darkHeader{
+    background-color: black;
+    .logo {
+        opacity: 1;
+    }
+}
+
+.logo img{
+    width: 100%;
+    display: block;
+}
+
+.logo{
+    width: 8%;
+    opacity: 0;
+}
+
+.logo a{
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index:100;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    flex: 1;
+    padding: 0 2rem;
+    list-style-type: none;
+}
+
+nav a,
+.footerIcons a,
+.learnMore a,{
+    color:white;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 1s;
+    text-transform: uppercase;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: block;
+}
+
+a:hover {
+    color: #536DFE;
+}
+
+.internal {
+    color: #536DFE;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.internal:hover{
+    color:black;
+}
+
+.link{
+    position: relative;
+}
+
+.link:after{
+    content: '';
+    position: absolute;
+    width: 0; height: 3px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #536DFE;
+    transition: width .5s ease;
+}
+
+.link:hover:after{
+    width: 100%;
+    left: 0;
+    background: #536DFE;
+}
+// NAV STYLES END
+
+
+// HEADER STYLES BEGINS
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/discretecover.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 10%;
+}
+
+// PHILSOPHY HEADER BEGINS
+header.philosophy{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/platoandsocrates.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 10%;
+}
+// PHILOSOPHY HEADER ENDS
+
+
+// SCIENCE HEADER BEGINS
+header.science{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/spacetime-blackhole.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 10%;
+}
+// SCIENCE HEADER ENDS
+
+
+// MATHEMATICS HEADER BEGINS
+header.mathematics{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/math1.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 10%;
+}
+// MATHEMATICS HEADER ENDS
+// HEADER STYLES END
+
+
+// MAIN STYLES BEGIN
+.imageContainer{
+    display: flex;
+    justify-content:center;
+    margin: 5%;
+}
+.mainImage{
+    width: 80%;
+    margin: 50px 0;
+    transition: all 1s;
+}
+
+.mainImage img{
+    width: 100%;
+    border-radius: 40%;
+}
+
+.mainImage:hover{
+     transform: scale(1.4);
+}
+
+
+// PHILOSOPHY BEGINS
+section.philosophy{
+    margin: 50px 0;
+}
+
+
+// PHILOSOPHY COINS BEGINS
+.headsTails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headsTails h3{
+    align-self: stretch;
+}
+
+.coinInstructions{
+    width: 44%;
+    margin: 15px 0;
+    border: solid #536DFE 5px;
+    padding: 0 12px;
+}
+
+.coinInstructions p{
+    margin: 12px 0;
+}
+
+.card {
+    width: 33%;
+    height:250px;
+    position: relative;
+    perspective: 800px;
+    margin-bottom: 120px;
+}
+
+.front, .back{
+    position: absolute;
+    height:100%;
+    width:100%;
+    transition:all 0.5s;
+    backface-visibility:hidden;
+    color:white;
+}
+
+.Plato{
+    background-image: url(../assets/platoether.jpg);
+}
+
+.Aristotle{
+    background-image: url(../assets/aristotle-face-1.jpg);
+}
+
+.Descartes{
+    background-image: url(../assets/descartes.jpg);
+}
+
+.Leibniz{
+    background-image: url(../assets/leibnizmonad.jpg);
+}
+
+.Kant{
+    background-image: url(../assets/kanty.jpg);
+
+}
+
+.Schopenhauer{
+    background-image: url(../assets/schopenhauer.jpg);
+
+}
+
+.Hartmann{
+    background-image: url(../assets/hartmann.jpg);
+
+}
+
+.Nietzsche{
+    background-image: url(../assets/nietzschedynamite.jpg);
+}
+
+.Hegel{
+    background-image: url(../assets/cosmichegel.jpg);
+}
+
+.circle-img{
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: solid silver 5px;
+}
+
+.back{
+    background: silver;
+    transform:rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 86px;
+    border: solid #FFD700 5px;
+}
+
+.card:hover .back{
+      transform:rotateY(0);
+}
+
+.card:hover .front{
+    transform:rotateY(180deg);
+}
+.coins{
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+// PHILOSOPHY COINS ENDS
+// PHILOSOPHY ENDS
+
+
+// SCIENCE BEGINS
+.waveParticle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.catSide{
+    width: 30%;
+}
+
+.catSide p{
+    margin: 0;
+}
+
+.catPic{
+    width: 50%;
+    background-color: transparent;
+
+}
+
+.catPic img{
+    width: 100%;
+    background:transparent;
+}
+
+// GALLERY STYLES BEGINs
+.portfolio {
+    background: black;
+
+}
+
+.wrapper.Gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.gallery{
+    width: 80%;
+}
+
+.galleryItem {
+    width:100%;
+    display:block;
+    max-height: 80vh;
+}
+
+.galleryItem img{
+    width: 100%;
+}
+// GALLERY ENDS
+// SCIENCE ENDS
+
+
+// MATH BEGINS
+.number{
+    margin: 75px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nerd{
+    align-self: center;
+}
+
+.number blockquote{
+    position: relative;
+    padding-top: 40px;
+}
+
+.number blockquote::before {
+    content: "“";
+    font-size: 8rem;
+    position: absolute;
+    top: 1px;
+    left: -48px;
+    color: white;
+}
+
+.fundamentals{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    width: 25%;
+    border: solid #536DFE 2px;
+    min-height: 400px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.learnMore a{
+    border: solid #536DFE 2px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    margin: 20px 0;
+    transition: all 1s;
+}
+
+.learnMore a:hover{
+    background-color: white;
+    opacity: .8;
+}
+
+.problemSolver{
+    display: flex;
+    flex-direction: column;
+}
+
+section.mathVid{
+    margin: 75px 0;
+}
+
+.videos{
+    margin:75px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.video{
+    width:40%;
+}
+
+iframe{
+    width: 100%;
+}
+
+h3.vid{
+    text-align: center;
+    border: solid #536DFE 2px;
+    padding: 10px;
+}
+// MATH STYLES ENDS
+// MAIN STYLES ENDS
+
+
+// MEDIA QUERIES BEGINS
+
+
+@media (max-width:987px){
+    .column{
+        width: 48%;
+
+    }
+
+    section.fundamentals{
+        flex-wrap:wrap;
+    }
+}
+
+
+@media (max-width: 639px){
+    section.coins{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.fundamentals{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column{
+        width:100%;
+    }
+    .videos{
+        flex-direction:column;
+    }
+
+    .video{
+        width:100%;
+        padding: 5% 0;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+
+        ul{
+            flex-direction: column;
+            align-items:center;
+            padding:0;
+
+            a{
+                padding:5%;
+            }
+
+        }
+
+    }
+
+    header{
+        display: flex;
+        // align-items: center;
+
+        h1{
+            margin:auto;
+            font-size: 4rem;
+        }
+    }
+
+    header.science{
+        display: flex;
+        justify-content: center;
+
+        h2{
+            font-size: 8rem;
+        }
+    }
+}
+
+
